@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2945BE1FBE587F007602EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2945BD1FBE587F007602EA /* AppDelegate.swift */; };
+		1F2945C01FBE587F007602EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2945BF1FBE587F007602EA /* ViewController.swift */; };
+		1F2945C31FBE587F007602EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2945C11FBE587F007602EA /* Main.storyboard */; };
+		1F2945C51FBE587F007602EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2945C41FBE587F007602EA /* Assets.xcassets */; };
+		1F2945C81FBE587F007602EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2945C61FBE587F007602EA /* LaunchScreen.storyboard */; };
+		1F2945D01FBE58AF007602EA /* MagicPacketSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2945CF1FBE58AF007602EA /* MagicPacketSender.swift */; };
+		1F2945D21FBE637B007602EA /* WakeOnHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2945D11FBE637B007602EA /* WakeOnHomeVC.swift */; };
+		B947ED5A3498A80971A6BF94 /* Pods_WakeMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14573AB6D85A71ADD285F00 /* Pods_WakeMeUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F2945BA1FBE587F007602EA /* WakeMeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2945BD1FBE587F007602EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F2945BF1FBE587F007602EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F2945C21FBE587F007602EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F2945C41FBE587F007602EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F2945C71FBE587F007602EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F2945C91FBE587F007602EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2945CF1FBE58AF007602EA /* MagicPacketSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicPacketSender.swift; sourceTree = "<group>"; };
+		1F2945D11FBE637B007602EA /* WakeOnHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeOnHomeVC.swift; sourceTree = "<group>"; };
+		2BB349D1D5D2656F332592C0 /* Pods-WakeMeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeMeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WakeMeUp/Pods-WakeMeUp.debug.xcconfig"; sourceTree = "<group>"; };
+		C14573AB6D85A71ADD285F00 /* Pods_WakeMeUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakeMeUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F7D2A49E329073B1F7CEA9 /* Pods-WakeMeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeMeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WakeMeUp/Pods-WakeMeUp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F2945B71FBE587F007602EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B947ED5A3498A80971A6BF94 /* Pods_WakeMeUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F2945B11FBE587F007602EA = {
+			isa = PBXGroup;
+			children = (
+				1F2945BC1FBE587F007602EA /* WakeMeUp */,
+				1F2945BB1FBE587F007602EA /* Products */,
+				4D0265714F6E0C6DEDBBBD6B /* Pods */,
+				6BE0A13D2AB1FBB232921987 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F2945BB1FBE587F007602EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F2945BA1FBE587F007602EA /* WakeMeUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F2945BC1FBE587F007602EA /* WakeMeUp */ = {
+			isa = PBXGroup;
+			children = (
+				1F2945BD1FBE587F007602EA /* AppDelegate.swift */,
+				1F2945BF1FBE587F007602EA /* ViewController.swift */,
+				1F2945D11FBE637B007602EA /* WakeOnHomeVC.swift */,
+				1F2945C11FBE587F007602EA /* Main.storyboard */,
+				1F2945C41FBE587F007602EA /* Assets.xcassets */,
+				1F2945C61FBE587F007602EA /* LaunchScreen.storyboard */,
+				1F2945C91FBE587F007602EA /* Info.plist */,
+				1F2945CF1FBE58AF007602EA /* MagicPacketSender.swift */,
+			);
+			path = WakeMeUp;
+			sourceTree = "<group>";
+		};
+		4D0265714F6E0C6DEDBBBD6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BB349D1D5D2656F332592C0 /* Pods-WakeMeUp.debug.xcconfig */,
+				D8F7D2A49E329073B1F7CEA9 /* Pods-WakeMeUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BE0A13D2AB1FBB232921987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C14573AB6D85A71ADD285F00 /* Pods_WakeMeUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F2945B91FBE587F007602EA /* WakeMeUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2945CC1FBE587F007602EA /* Build configuration list for PBXNativeTarget "WakeMeUp" */;
+			buildPhases = (
+				88B99B1EADADEB16B0629596 /* [CP] Check Pods Manifest.lock */,
+				1F2945B61FBE587F007602EA /* Sources */,
+				1F2945B71FBE587F007602EA /* Frameworks */,
+				1F2945B81FBE587F007602EA /* Resources */,
+				F8AF7BFDC4F68E1E36E0F3DC /* [CP] Embed Pods Frameworks */,
+				D215CE674BEB4F9946FD9DF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeMeUp;
+			productName = WakeMeUp;
+			productReference = 1F2945BA1FBE587F007602EA /* WakeMeUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F2945B21FBE587F007602EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ferit Bölezek";
+				TargetAttributes = {
+					1F2945B91FBE587F007602EA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F2945B51FBE587F007602EA /* Build configuration list for PBXProject "WakeMeUp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F2945B11FBE587F007602EA;
+			productRefGroup = 1F2945BB1FBE587F007602EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F2945B91FBE587F007602EA /* WakeMeUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F2945B81FBE587F007602EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2945C81FBE587F007602EA /* LaunchScreen.storyboard in Resources */,
+				1F2945C51FBE587F007602EA /* Assets.xcassets in Resources */,
+				1F2945C31FBE587F007602EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88B99B1EADADEB16B0629596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D215CE674BEB4F9946FD9DF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WakeMeUp/Pods-WakeMeUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8AF7BFDC4F68E1E36E0F3DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WakeMeUp/Pods-WakeMeUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F2945B61FBE587F007602EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2945D21FBE637B007602EA /* WakeOnHomeVC.swift in Sources */,
+				1F2945D01FBE58AF007602EA /* MagicPacketSender.swift in Sources */,
+				1F2945C01FBE587F007602EA /* ViewController.swift in Sources */,
+				1F2945BE1FBE587F007602EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F2945C11FBE587F007602EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2945C21FBE587F007602EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F2945C61FBE587F007602EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2945C71FBE587F007602EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F2945CA1FBE587F007602EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F2945CB1FBE587F007602EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F2945CD1FBE587F007602EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB349D1D5D2656F332592C0 /* Pods-WakeMeUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y4J6E2MDD;
+				INFOPLIST_FILE = WakeMeUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeritBolezek.WakeMeUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F2945CE1FBE587F007602EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F7D2A49E329073B1F7CEA9 /* Pods-WakeMeUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y4J6E2MDD;
+				INFOPLIST_FILE = WakeMeUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeritBolezek.WakeMeUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F2945B51FBE587F007602EA /* Build configuration list for PBXProject "WakeMeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2945CA1FBE587F007602EA /* Debug */,
+				1F2945CB1FBE587F007602EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2945CC1FBE587F007602EA /* Build configuration list for PBXNativeTarget "WakeMeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2945CD1FBE587F007602EA /* Debug */,
+				1F2945CE1FBE587F007602EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F2945B21FBE587F007602EA /* Project object */;
+}

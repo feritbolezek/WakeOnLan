@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0dD-Qf-urd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wake me up-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WakeMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's wake your device up..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ot-bH-nxu">
+                                <rect key="frame" x="0.0" y="124" width="375" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Broadcast Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsD-Mz-g4A">
+                                <rect key="frame" x="62.5" y="242" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="FZl-7e-tqL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MAC-Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="orp-rS-36U">
+                                <rect key="frame" x="62" y="288" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="67j-Ym-d4e"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuJ-01-eWo">
+                                <rect key="frame" x="155" y="350" width="64" height="30"/>
+                                <state key="normal" title="Wake up!"/>
+                                <connections>
+                                    <action selector="wakeMeUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jd-QN-ikJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CsD-Mz-g4A" firstAttribute="top" secondItem="8ot-bH-nxu" secondAttribute="bottom" constant="32" id="6Uf-sz-Jcm"/>
+                            <constraint firstItem="8ot-bH-nxu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="KWY-r3-YXD"/>
+                            <constraint firstItem="orp-rS-36U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ka8-xH-zha"/>
+                            <constraint firstItem="xuJ-01-eWo" firstAttribute="top" secondItem="orp-rS-36U" secondAttribute="bottom" constant="32" id="cLy-9O-NVk"/>
+                            <constraint firstItem="CsD-Mz-g4A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p8H-0W-rPs"/>
+                            <constraint firstItem="xuJ-01-eWo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pga-kc-pzV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ot-bH-nxu" secondAttribute="trailing" id="rFB-dm-vtN"/>
+                            <constraint firstItem="orp-rS-36U" firstAttribute="top" secondItem="CsD-Mz-g4A" secondAttribute="bottom" constant="16" id="urk-Xl-alp"/>
+                            <constraint firstItem="8ot-bH-nxu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w0X-ok-32g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wake me up" id="zeE-f2-tQW"/>
+                    <connections>
+                        <outlet property="broadcastAddress" destination="CsD-Mz-g4A" id="KdO-sV-LGw"/>
+                        <outlet property="macAddress" destination="orp-rS-36U" id="pNC-29-k9D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="116"/>
+        </scene>
+        <!--Wake on home-->
+        <scene sceneID="0EA-DN-pSi">
+            <objects>
+                <viewController id="5Hi-0c-A8W" customClass="WakeOnHomeVC" customModule="WakeMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Mc-Jm-sCm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Broadcast Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9Q-9l-mcH">
+                                <rect key="frame" x="88" y="123.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="63G-vb-Zqf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MAC-Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-eV-J3S">
+                                <rect key="frame" x="87.5" y="185.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VdT-4z-fYA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Beacon UUID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mup-N2-L7S">
+                                <rect key="frame" x="88" y="247.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="r4e-Y5-D2A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake when home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnv-jF-fNI">
+                                <rect key="frame" x="62.5" y="52" width="250.5" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ox-wQ-9Vu">
+                                <rect key="frame" x="127" y="309.5" width="120" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start listening"/>
+                                <connections>
+                                    <action selector="startListeningTapped:" destination="5Hi-0c-A8W" eventType="touchUpInside" id="O9t-rL-Ubw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for activation..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-3f-PnV">
+                                <rect key="frame" x="99.5" y="377.5" width="175.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hnv-jF-fNI" firstAttribute="centerX" secondItem="5Mc-Jm-sCm" secondAttribute="centerX" id="AIo-AB-gAg"/>
+                            <constraint firstItem="jXa-eV-J3S" firstAttribute="top" secondItem="z9Q-9l-mcH" secondAttribute="bottom" constant="32" id="BX1-Dx-aEV"/>
+                            <constraint firstItem="mup-N2-L7S" firstAttribute="top" secondItem="jXa-eV-J3S" secondAttribute="bottom" constant="32" id="O4R-nP-KuR"/>
+                            <constraint firstItem="6ox-wQ-9Vu" firstAttribute="centerX" secondItem="5Mc-Jm-sCm" secondAttribute="centerX" id="UFf-4K-qGD"/>
+                            <constraint firstItem="z9Q-9l-mcH" firstAttribute="centerX" secondItem="5Mc-Jm-sCm" secondAttribute="centerX" id="WTS-dO-KTc"/>
+                            <constraint firstItem="wFT-3f-PnV" firstAttribute="centerX" secondItem="5Mc-Jm-sCm" secondAttribute="centerX" id="Zid-XT-weC"/>
+                            <constraint firstItem="hnv-jF-fNI" firstAttribute="top" secondItem="w5i-vc-G35" secondAttribute="top" constant="32" id="c7d-Fa-Sqq"/>
+                            <constraint firstItem="z9Q-9l-mcH" firstAttribute="top" secondItem="hnv-jF-fNI" secondAttribute="bottom" constant="32" id="iBp-2u-h1z"/>
+                            <constraint firstItem="jXa-eV-J3S" firstAttribute="centerX" secondItem="5Mc-Jm-sCm" secondAttribute="centerX" id="mOS-O8-Nj2"/>
+                            <constraint firstItem="mup-N2-L7S" firstAttribute="centerX" secondItem="5Mc-Jm-sCm" secondAttribute="centerX" id="mQn-E4-dtR"/>
+                            <constraint firstItem="wFT-3f-PnV" firstAttribute="top" secondItem="6ox-wQ-9Vu" secondAttribute="bottom" constant="32" id="tNr-VT-aNF"/>
+                            <constraint firstItem="6ox-wQ-9Vu" firstAttribute="top" secondItem="mup-N2-L7S" secondAttribute="bottom" constant="32" id="umI-fx-IIh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w5i-vc-G35"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wake on home" id="VWw-Af-C4a"/>
+                    <connections>
+                        <outlet property="beaconUUIDTxtField" destination="mup-N2-L7S" id="sq6-ge-Foz"/>
+                        <outlet property="broadcastAddressTxtField" destination="z9Q-9l-mcH" id="q5T-N4-zTp"/>
+                        <outlet property="macAddressTxtField" destination="jXa-eV-J3S" id="CFx-wg-NpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5iC-Un-q4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="116"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TFf-Sa-nOS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0dD-Qf-urd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9cI-5t-ruA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ahO-Oz-ku3"/>
+                        <segue destination="5Hi-0c-A8W" kind="relationship" relationship="viewControllers" id="rCe-fA-kZ0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jse-Fe-efn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="116.94152923538232"/>
+        </scene>
+    </scenes>
+</document>
