@@ -26,5 +26,3 @@ That is all there is, hope you find it useful!
 ## Extras
 
 The project also includes some extras, i created a viewcontroller with some code for WOL to trigger once you get in range of an iBeacon. You can view the UI for it in the Main.storyboard. If you wish to use it, you will need an iBeacon with a UUID set to it. Feed in the UUID for the AwakeOnHomeVC to use. You can now power on your PC while you're parking at the garage!
-
-Feel free to contact me regards any questions or to tell me about your usage of code. You may use the contents of the project for whatever you like. 😀👊🏻
